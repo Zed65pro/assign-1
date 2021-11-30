@@ -1,2 +1,2 @@
-# assign-1
-Assignment 1 - week 2
+# assigment-2
+Assignment 2 for module 2
