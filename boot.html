@@ -1,70 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- get the external files from getbootstrap.com and jquery.com (jquery is essential for utilizing bootstrap js files) -->
-<!-- WHat is bootstrap framework? it's also a 12 framwork which is predefined to help users use a good system mainly which suits both
-mobile and desktop screens, but it also modifies and standarizes some fonts, styles etc.
-it starts with a "container"/"container-fluid" block which spans the screen and inside of it different rows, which can be structured with the
-"col-SIZE-SPAN" system like "col-md-6" etc. 
-Extra small (xs) <576px screen
-Small (sm) >=567
-Medium (md) >=768 (in application md is >=992)
-Large (lg) >=992 (although when applying lg is minwidth 1200)
-Extra large (xl) >=1200
-Extra extra large (xxl) >=1400
-
-and the span is from 1-12 i.e col-md-6 means 12/6 so each block occupies half the screen for 6 rows (2 each row so 12 in total) and so on
-more info from bootstrap doc
--->
 <head>
-    <!-- basic initializations -->
     <meta charset="utf-8">
-    <!-- for MS edge -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- for using mobile devices without zooming out and other crap -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- title -->
     <title>Bootstrap</title>
 
-    <!-- load bootstrap css bootstrap min is a minimized version of the bootstrap.cc (less bloating)-->
+    <!-- CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-
-    <!-- load our own css styles -->
     <link rel="stylesheet" href="css/styles.css">
 
 </head>
 
 <body>
-    <!-- The . container class provides a responsive fixed width container. 
-    The  container-fluid class provides a full width container, spanning the entire width of the viewport. -->
     <div class="container-fluid ">
-
-        <h1 class="h1-1"> BOOTSTRAP STRUCTURE</h1>
-        
         <div class="row">
-            <div class="col-lg-3 col-md-1 div-1" >
-                Hello bootstrap 1!
-            </div>
-            <div class="col-lg-3 col-md-1 div-1" >
-                Hello bootstrap 2!
-            </div>
-            <div class="col-lg-3 col-md-1 div-1" >
-                Hello bootstrap 3!
-            </div>
-            <div class="col-lg-3 col-md-1 div-1" >
-                Hello bootstrap 4!
-            </div>
-            <div class="col-lg-3 col-md-1 div-1" >
-                Hello bootstrap 5!
-            </div>
+            sss
         </div>
     </div>
 
-    <!-- JS and jquery files  (again min is minimized version), initialize jquery before bootstrap.js-->
+    <!-- Scripts -->
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <!-- our own script -->
     <script src="js/script.js"></script>
 </body>
 </html>
