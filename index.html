@@ -1,32 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGNMENT 1</title>
 
     <style>
 
-        .container{
-            color: blue;
+        *{
+            box-sizing: border-box;
         }
-        @media (min-width: 992){
+        body{
+            margin:0px;
+            padding:0px;
+        }
 
-            .container > *{
-                width: 992px;
+        .container{
+            width:100%;
+            /* border: 2px solid black; */
+            
+        }
 
+        .row{
+            width:100%;
+            /* border: 5px solid black; */
+            padding:0px;
+            
+        }
+
+        #head-1{
+            text-align: center;
+            font-size: 54px;
+            font-weight: bolder;
+            font-family:'Times New Roman', Times, serif;
+            margin-bottom:20px;
+            margin-top: 20px;
+        }
+
+        .title{
+            float: right;
+            width: 30%;
+            border: 1px solid black;
+            margin-top: 0px;
+            font-size: 26px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        #t1{
+            background-color: aqua;
+        }
+        #t2{
+            background-color: green;
+            color:white;
+        }
+        #t3{
+            background-color: red;
+        }
+
+        .text{
+            clear: right;
+            font-size: 24px;
+            font-weight: 300;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            overflow: hidden;
+        }
+        .sec{
+            background-color: blanchedalmond;
+            border: 1px solid black;
+            padding-left:5px;
+            margin: 10px 10px;
+        }
+
+        @media (min-width: 992px){
+
+            #sec-1,#sec-2,#sec-3{
+                float:left;
+                width:32.33%;
+                margin-right: 0px;
+                margin-left:1%;
+            }
+            .row{
+                padding-right: 1%;
             }
         }
-    </style>
-</head>
 
+        @media(min-width: 768px) and (max-width: 991px){
+            #sec-1,#sec-2{
+                width:49%;
+                margin-right: 0px;
+                margin-left:1%;
+                float:left;
+            }
+            .row{
+                padding-right: 1%;
+            }
+            #sec-3{
+                float:left;
+                width: calc(100%)
+            }
+        }
+
+        @media (max-width: 767px){
+            #sec-1,#sec-2,#sec-3{
+                float:left;
+                width: 100%;
+            }
+            .row{
+                padding-right: 20px;
+            }
+        }
+
+    </style>
+
+</head>
 <body>
+
     <div class="container">
         <div class="row">
-            sss
+
+            <header id="head-1">
+                DUMMY PROGRAM
+            </header>
+
+            <section id="sec-1" class="sec">
+
+                <p class="title" id="t1">  Chicken</p>
+
+                <p class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore veritatis nostrum velit cumque.
+                    Minima nostrum facere dolores praesentium nesciunt et minus exercitationem tenetur eos, 
+                    asperiores quia perspiciatis placeat esse aliquam.
+                </p>
+
+            </section>
+
+            <section id="sec-2" class="sec">
+                <p class="title" id="t2"> Beef</p>
+
+                <p class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore veritatis nostrum velit cumque.
+                    Minima nostrum facere dolores praesentium nesciunt et minus exercitationem tenetur eos, 
+                    asperiores quia perspiciatis placeat esse aliquam.
+                </p>
+            </section>
+
+            <section id="sec-3" class="sec">
+                <p class="title" id="t3"> Sushi</p>
+
+                <p class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore veritatis nostrum velit cumque.
+                    Minima nostrum facere dolores praesentium nesciunt et minus exercitationem tenetur eos, 
+                    asperiores quia perspiciatis placeat esse aliquam.
+                </p>
+            </section>
+
         </div>
     </div>
 
